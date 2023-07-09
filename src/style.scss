@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600&display=swap');
+
+$primary-color: #002fff;
+$dark-color: #2c2c2c;
+$light-color: #d4d4d4;
+$olive: #33c213;
+$deep-black: #000000;
+$dark-grey-1: #222222;
+$dark-grey-2: #333333; 
+$dark-grey3: #444444;
+$electric-orange: #FF6600;
+$electric-yellow: #FFFF00;
+$electric-purple: #9900FF;
+$electric-lime: #CCFF00;
+$electric-cyan: #00FFCC;
+$electric-magenta: #FF00AA;
+$electric-green: #00FF00;
+$electric-pink: #FF00FF;
+
+body {
+  margin: 0;
+  background-color: $dark-grey-1;
+  font-family: 'Source Code Pro', monospace;
+  overflow-x: hidden;
+}
+
+section{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding: 100px 20vw;
+}
+
+.title-top{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 470px;
+  padding: 100px 20vw;
+  background-color: $deep-black;
+
+  h1{
+    font-size: 140px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: $light-color;
+  }
+
+  h3{
+    color: $light-color;
+  }
+}
+
+.cards-top{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 520px;
+  padding: 100px 20vw;
+
+  .card-item{
+    padding: 0 2rem;
+
+    h1{
+      font-size: 35px;
+      color: $olive
+    }
+
+    p{
+      color: $light-color;
+    }
+  }
+}
+
+.shape-top-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.shape-top-1 svg {
+  position: relative;
+  display: block;
+  width: calc(216% + 1.3px);
+  height: 188px;
+}
+
+.shape-top-1 .shape-fill {
+  fill: #33C213;
+}
+
+.shape-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.shape-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(246% + 1.3px);
+  height: 96px;
+}
+
+.shape-bottom .shape-fill {
+  fill: #33C213;
+}
+
+.curve{
+  position: absolute;
+  height: 225px;
+  width: 100%;
+  bottom: 0;
+}
+
+.curve-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.curve-1 svg {
+  position: relative;
+  display: block;
+  width: calc(156% + 1.3px);
+  height: 192px;
+  transform: rotateY(180deg);
+}
+
+.curve-1 .shape-fill {
+  fill: #33C213;
+}
+
+.curve-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.curve-2 svg {
+  position: relative;
+  display: block;
+  width: calc(156% + 1.3px);
+  height: 192px;
+}
+
+.curve-2 .shape-fill {
+  fill: #33C213;
+}
+
+.layer2{
+  background-image: url("./layer2.svg");
+}
+
+.flip{
+  transform: rotate(180deg);
+}
+
+.blob-bottom{
+  background-color: $deep-black;
+
+  h1{
+    font-size: 100px;
+    color: $light-color;
+  }
+
+  p{
+    color: $light-color;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .curve-1 svg {
+      width: calc(213% + 1.3px);
+      height: 106px;
+  }
+
+  .curve-2 svg {
+    width: calc(124% + 1.3px);
+    height: 76px;
+  }
+
+  .cards-top{
+    display: flex;
+    flex-direction: column;
+  }
+} 
+
